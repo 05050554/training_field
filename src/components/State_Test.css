@@ -1,0 +1,20 @@
+.ham{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.ham .sp{
+padding: 0 10%;
+}
+
+.ham .menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+   
+}
+
+.ham .menu ul li{
+    list-style: none;
+}

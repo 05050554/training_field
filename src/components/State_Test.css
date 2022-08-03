@@ -1,14 +1,14 @@
-.ham{
+/* .ham{
     display: flex;
     justify-content: center;
     
-}
+} */
 
-.ham .sp{
+/* .ham .sp{
 padding: 0 10%;
-}
+} */
 
-.ham .menu{
+/* .ham .menu{
     display: flex;
     flex-direction: column;
     margin-top: 5%;
@@ -17,4 +17,4 @@ padding: 0 10%;
 
 .ham .menu ul li{
     list-style: none;
-}
+} */

@@ -1,0 +1,23 @@
+:root{
+    --normal-font-size:14px;
+    --normal-font-color:orange;
+    --title-font-size:50px;
+    --title-font-color:rgba(51, 211, 64, 0.493);
+
+}
+
+p{
+    font-size: var(--normal-font-size);
+}
+
+/* h1{
+    font-size: var(--title-font-size);
+    color: var(--title-font-color);
+} */
+
+span{
+    font-size: var(--normal-font-size);
+    color:var(--normal-font-color)
+}
+
+

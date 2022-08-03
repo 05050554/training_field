@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import Navbar from "./Navbar";
 
 const Registerform = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 500px;
+ 
 `;
 const Title = styled.h1`
   font-weight: normal;
@@ -55,7 +56,11 @@ const RegisterPage = () => { /*把需要控制的都寫在一起，可以方便�
   }
 
   return (
+    <div>
+        <Navbar/>
+     
     <Registerform>
+    
       <Title>Register</Title>
       <Form onSubmit={handleSubmit}>
         <Textbox
@@ -91,6 +96,7 @@ const RegisterPage = () => { /*把需要控制的都寫在一起，可以方便�
         {/* <Register href="/">Don't have an account? Sign Up</Register> */}
       </Form>
     </Registerform>
+    </div>
   );
 };
 

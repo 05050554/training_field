@@ -1,0 +1,46 @@
+.title{
+    display: grid;
+    
+}
+
+.contain {
+   
+    display: grid;
+    justify-items:center;
+    justify-content: center;
+    
+}
+
+
+.fieldAdd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.listContain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 3;
+}
+
+.listContain .listContainIndex{
+    display: flex;
+    width: 10%;
+}
+
+.listContain .listContainName{
+    display: flex;
+    width: 70%;
+
+}
+
+.listContain .listContainDelete{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+
+}
+

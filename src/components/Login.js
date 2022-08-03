@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-
+import Navbar from "./Navbar";
 const Loginform = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,6 +53,8 @@ const Login = () => {
   /*onSubmit 是在表單中的確認按鈕被點後時觸發的*/
 
   return (
+    <div>
+    <Navbar/>
     <Loginform>
       <Title>Login</Title>
       <Form onSubmit={handleSubmit}>
@@ -76,6 +78,7 @@ const Login = () => {
         <Register href="/">Don't have an account? Sign Up</Register>
       </Form>
     </Loginform>
+    </div>
   );
 };
 

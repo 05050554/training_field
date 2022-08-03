@@ -3,6 +3,8 @@ import axios from "axios";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
+import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Api_Pretice = () => {
   //   const [catchData, setCatchData] = useState([]);
@@ -42,12 +44,17 @@ const Api_Pretice = () => {
   function handleClick(e) {
     e.preventDefault();
     const fil = arrData.filter((J) => J.name === searchData);
-    console.log(fil);
+    // console.log(fil);
     setArrData(fil);
+    console.log(arrData)
   }
 
   return (
-    <div>
+   
+    <div className="Api" id="Api">
+       <Navbar/>
+      {/* <Link to="/">Click Back To LinkPrac</Link> */}
+      <br/>
       <form onSubmit={handleClick} style={{textAlign:"center"}} >
         <input onChange={handleInput} value={searchData} placeholder="Type Full Name"></input>
         <button type="submit">Search</button>
@@ -65,6 +72,7 @@ const Api_Pretice = () => {
           </GridListTile>
         ))}
       </GridList>
+      
     </div>
   );
 };

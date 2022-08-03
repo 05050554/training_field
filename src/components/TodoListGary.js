@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 
 const TodoListGary = () => {
   const [todo, setTodo] = useState([]);
@@ -43,6 +44,7 @@ const TodoListGary = () => {
 
   return (
     <div>
+      <Navbar/>
        <h3>Todolist</h3>
       <input id = 'input' value = {state} onChange={(e) => setState(e.target.value)}></input>
       <button onClick={handleSTodo}>Add</button>

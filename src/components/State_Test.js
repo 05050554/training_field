@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 // import "./State_Test/State_Test.css";
 import "./State_Test.css";
-
+import Navbar from "./Navbar";
 const State_Test = () => {
   const [count, setCount] = useState(1);
   const [open, setOpen] = useState(false); /*狀態管理 預設為關*/
   return (
+    
     <div className="ham">
+      <Navbar/>
       <div className="sp">
         <button onClick={() => setOpen(!open)}>TIPS</button>
       </div>

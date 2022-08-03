@@ -1,0 +1,18 @@
+.BoxTitle{
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.BoxJistifyCenter{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.BoxMultipleJistifyCenter{
+  display: flex;
+  justify-content: Space-between;
+  flex-wrap:wrap
+  
+}
